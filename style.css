@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(fontes/JetBrainsMono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fontes/MontSerrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+body, h1, h2, h3, p, ul, li, button, ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section#details {
+    background-color: #00005F;
+    color: white;
+}
+
+#details > span {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#tituloprincipal {
+    padding: 32px 0;
+    font-weight: 900;
+    font-size: clamp(2.375rem, 0.063rem + 9.25vw, 7rem);
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+#details > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding-bottom: 32px;
+    line-height: 30px;
+}
+
+#botaoprincipal {
+    padding: 25px 50px;
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #00FFA5;
+    color: black;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.688rem + 0.75vw, 1.25rem);
+    border-style: inherit;
+    cursor: pointer;
+}
+
+.section-destaque {
+    background-color: #00002A;
+    color: white;
+}
+
+.miniparagrafo {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+.section-destaque, .section-calendario, #details {
+    padding: 63.141px;
+}
+
+.section-calendario {
+    background-color: #00005F;
+    color: white;
+}
+
+.titulo-secundario {
+    font-family: "JetBrains Mono", sans-serif;
+    padding: 32px 0;
+    font-size: 42px;
+}
+
+.paragrafos-maiores {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding: 0px 0px 32px;
+    line-height: 30px;
+}
+
+.paragrafos-menores {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.paragrafos-maior {
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 31px;
+    display: block;
+}
+
+.titulo-terciario {
+    font-weight: 700;
+    font-size: clamp(1.188rem, 0.813rem + 1.5vw, 1.938rem);
+}
+
+
+
+#rodape {
+    background-color: #00002A;
+    font-size: 15px;
+    padding: 32px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border-top: 1px solid gray;
+    color: white;
+}
+
+svg {
+    fill: white;
+}
+
+.lista-cartoes {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 32px;
+}
+
+.cartao {
+    border: 1px solid gray;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+div.cartao-informacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal::backdrop {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.cabecalho-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal[open] {
+    background-color: #191c1f;
+    color: white;
+    border: 2px solid blue;
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 400px;
+}
+
+.botao-inscricao {
+    padding: 10px 30px;
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #00FFA5;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: inherit;
+}
+
+.botao-fechar-modal {
+    background-color: #343440;
+    padding: 8px 12px;
+    color: #adb5bd;
+    cursor: pointer;
+}
+
+.input-modal {
+    background-color: #191c1f;
+    border: 1px solid #808080;
+    padding: 14px 20px;
+    color: white;
+    font-family: "JetBrains Mono", sans-serif;
+
+}
+
+/* responsividade */
+
+@media (max-width: 1068px) {
+    .lista-cartoes {
+        flex-direction: column;
+    }
+}
